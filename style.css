@@ -263,3 +263,42 @@ a.btn.cyan:hover {
     transform: rotate(0deg);
   }
 }
+
+/* Brand-Section */
+
+.brand-section {
+  background: var(--light-color);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 24px;
+  padding: 32px 50px;
+  margin-top: 100px;
+}
+
+.brand-section .brand-container img {
+  height: 32px;
+}
+
+.brand-section .brand-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-section h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  color: var(--dark-color);
+  margin-bottom: 48px;
+  text-align: center;
+  position: relative;
+}
+
+.brand-section h2::after {
+  position: absolute;
+  width: 43px;
+  content: "";
+  height: 3px;
+  top: 40px;
+  background: var(--red-color);
+  transform: translateX(-43px);
+}
