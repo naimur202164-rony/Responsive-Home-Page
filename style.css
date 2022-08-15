@@ -51,6 +51,10 @@ body {
 .desktop-nav .menu-items li {
   margin: 0 20px;
 }
+/* Last Child */
+.desktop-nav .menu-items li:last-child {
+  margin: 0;
+}
 
 .desktop-nav .menu-items li a {
   text-decoration: none;
@@ -60,7 +64,7 @@ body {
 }
 .desktop-nav .menu-items li a.btn {
   color: var(--light-color);
-  padding: 14px 34px;
+  padding: 14px 30px;
   border-radius: 24px;
 }
 
