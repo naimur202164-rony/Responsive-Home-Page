@@ -93,7 +93,6 @@ a.btn {
   font-weight: bold;
   transition: background-color 400ms;
 }
-
 a.btn.cyan {
   background: var(--cyan-color);
   color: var(--dark-color);
@@ -166,3 +165,6 @@ a.btn.cyan:hover {
   top: 300px;
   left: 540px;
 }
+
+/* Header Animation */
+.acnn;
