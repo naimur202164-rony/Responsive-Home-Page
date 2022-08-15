@@ -52,8 +52,12 @@ body {
   margin: 0 20px;
 }
 /* Last Child */
-.desktop-nav .menu-items li:last-child {
+/* .desktop-nav .menu-items li:last-child {
   margin: 0;
+} */
+
+.desktop-nav .menu-items li:nth-last-of-type(1) {
+  margin-right: 0;
 }
 
 .desktop-nav .menu-items li a {
