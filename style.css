@@ -69,9 +69,9 @@ body {
 }
 
 .desktop-nav .menu-items li a.active::after {
+  content: "";
   position: absolute;
   height: 3px;
-  content: "";
   width: 100%;
   left: 0;
   bottom: -14px;
@@ -87,4 +87,51 @@ body {
 a.btn {
   background: var(--red-color);
   color: var(--light-color);
+  text-decoration: none;
+  border-radius: 24px;
+  padding: 14px 30px;
+  font-weight: bold;
+}
+
+a.btn.cyan {
+  background: var(--cyan-color);
+  color: var(--dark-color);
+  font-weight: bold;
+}
+
+/* Hero -Container */
+
+.hero-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-container .left h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  margin: 8px 0 28px 0;
+}
+
+.hero-container .left .gt {
+  color: var(--red-color);
+}
+
+.hero-container .left .btn {
+  margin-right: 20px;
+}
+.hero-container .right p {
+  padding-right: 30px;
+}
+.hero-container .left p {
+  font-size: 24px;
+}
+
+.hero-bg {
+  display: none;
+}
+
+.polygon-container {
+  display: none;
 }
