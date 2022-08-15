@@ -91,6 +91,7 @@ a.btn {
   border-radius: 24px;
   padding: 14px 30px;
   font-weight: bold;
+  transition: background-color 400ms;
 }
 
 a.btn.cyan {
@@ -98,7 +99,12 @@ a.btn.cyan {
   color: var(--dark-color);
   font-weight: bold;
 }
-
+a.btn:hover {
+  background-color: var(--red-hover-color);
+}
+a.btn.cyan:hover {
+  background-color: var(--cyan-hover-color);
+}
 /* Hero -Container */
 
 .hero-container {
