@@ -65,7 +65,19 @@ body {
   color: var(--dark-color);
   font-size: 16px;
   font-weight: bold;
+  position: relative;
 }
+
+.desktop-nav .menu-items li a.active::after {
+  position: absolute;
+  height: 3px;
+  content: "";
+  width: 100%;
+  left: 0;
+  bottom: -14px;
+  background-color: var(--red-color);
+}
+
 .desktop-nav .menu-items li a.btn {
   color: var(--light-color);
   padding: 14px 30px;
