@@ -2,10 +2,54 @@
 
 :root {
   --dark-color: #2b2d42;
-  --light-color: #2b2d42;
+  --light-color: #fefefe;
   --red-color: #d80032;
   --cyan-color: #41ead4;
 
   --red-hover-color: #be0732;
   --cyan-hover-color: #6af3e1;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  width: 1152px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+/* Header -Navigation */
+
+.desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  background: var(--light-color);
+  align-items: center;
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  padding: 2px 30px;
+  position: fixed;
+}
+
+.desktop-nav .menu-items {
+  display: flex;
+  list-style: none;
+}
+
+.desktop-nav .menu-items li {
+  margin: 0 20px;
+}
+
+.desktop-nav .menu-items li a {
+  text-decoration: none;
+  color: var(--dark-color);
+  font-size: 16px;
+  font-weight: bold;
 }
