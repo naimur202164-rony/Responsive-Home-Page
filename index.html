@@ -231,9 +231,100 @@
 
     <!-- End of Testimonials Section -->
 
+    <div class="wrapper">
+      <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form action="#">
+          <div class="group">
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Email" />
+          </div>
+
+          <div class="group">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+
+          <a href="#" class="btn cyan">Send Message</a>
+        </form>
+      </section>
+    </div>
+
+    <!-- End of Contact Section -->
+
+    <footer>
+      <div class="wrapper">
+        <div class="footer-container">
+          <div class="logo">
+            <img src="images/Logo-Light.svg" alt="" />
+          </div>
+
+          <div class="footer-nav">
+            <h3>Our Services</h3>
+            <ul>
+              <li><a href="#">Mobile Development</a></li>
+              <li><a href="#">Web App Development</a></li>
+              <li><a href="#">Theme Development</a></li>
+              <li><a href="#">SEO</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-nav">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="#">GT Web Design</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-nav">
+            <h3>Get Social</h3>
+
+            <div class="footer-social">
+              <a href="#">
+                <img src="images/FacebookLogo.png" alt="" />
+              </a>
+
+              <a href="#">
+                <img src="images/InstagramLogo.png" alt="" />
+              </a>
+
+              <a href="#">
+                <img src="images/TwitterLogo.png" alt="" />
+              </a>
+            </div>
+
+            <p>info@gtcoding.net</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="copyright">
+        This website was designed by Godson T. &copy; 2020
+      </p>
+    </footer>
+
     <!-- End of the Footer -->
 
     <script src="glider.min.js"></script>
+
+    <script>
+      new Glider(document.querySelector(".testimonials"), {
+        slidesToShow: 1,
+        dots: ".dots",
+        arrows: {
+          prev: ".slider-prev",
+          next: ".slider-next",
+        },
+      });
+    </script>
 
     <script src="main.js"></script>
   </body>
