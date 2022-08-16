@@ -24,7 +24,18 @@ body {
   margin: 0 auto;
   padding: 0 100px;
 }
+p {
+  line-height: 2;
+  margin-bottom: 20px;
+}
 
+section {
+  padding-top: 100px;
+}
+
+section p {
+  color: var(--dark-color);
+}
 /* Header -Navigation */
 
 .desktop-nav {
@@ -285,7 +296,7 @@ a.btn.cyan:hover {
 }
 
 .brand-section h2,
-.about-section h2 {
+section h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 32px;
   color: var(--dark-color);
@@ -295,7 +306,7 @@ a.btn.cyan:hover {
 }
 
 .brand-section h2::after,
-.about-section h2::after {
+section h2::after {
   position: absolute;
   width: 43px;
   content: "";
@@ -305,4 +316,12 @@ a.btn.cyan:hover {
   transform: translateX(-43px);
 }
 
-/*  */
+/* About Us */
+.about-section .section-content {
+  display: flex;
+}
+
+.about-section .section-content img {
+  margin-left: 100px;
+}
+/* Our Projects */
