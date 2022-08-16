@@ -2,157 +2,239 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Responsive Home Page</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>GT Web Design</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="glider.min.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="wrapper">
+      <div class="mobile-nav">
+        <ul class="menu-items">
+          <li>
+            <a href="#about">About</a>
+          </li>
+
+          <li>
+            <a href="#projects">Our Projects</a>
+          </li>
+
+          <li>
+            <a href="#testimonials">Testimonials</a>
+          </li>
+
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+
       <nav class="desktop-nav">
         <div class="logo">
           <a href="#">
-            <img src="./img/Logo.svg" alt="" />
+            <img src="images/Logo.svg" alt="" />
           </a>
         </div>
 
+        <div class="menu-icon">
+          <img src="images/MenuIcon.svg" alt="" />
+        </div>
+
         <ul class="menu-items">
-          <li><a href="#" class="active">About </a></li>
-          <li><a href="#">Our Projects</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Contact/a></li>
-          <li><a href="#">About </a></li>
-          <li><a href="#" class="btn">Get  Started </a></li>
+          <li>
+            <a href="#about" class="active">About</a>
+          </li>
+
+          <li>
+            <a href="#projects">Our Projects</a>
+          </li>
+
+          <li>
+            <a href="#testimonials">Testimonials</a>
+          </li>
+
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="btn">Get Started</a>
+          </li>
         </ul>
       </nav>
-      <!-- End of Deskto Version -->
 
+      <!-- End of Desktop Navigation -->
 
-    <!-- Hero Section -->
-
-      <header  class="hero-container">
+      <header class="hero-container">
         <div class="left">
-            <p>Wellcome To</p>
-            <h1><span class="gt">GT </span> Web  Desgin</h1>
-            <a href="#" class="btn">Get  Started</a>
-            <a href="#" class="btn cyan">Learn More</a>
+          <p>Welcome To</p>
+          <h1><span class="gt">GT</span> Web Design</h1>
+          <a href="#" class="btn">Get Started</a>
+          <a href="#" class="btn cyan">Learn More</a>
         </div>
 
         <div class="right">
-            <img src="./img/undraw_mobile_feed_73bd 1.svg" alt="">
+          <img src="images/HeroImage.svg" alt="" />
         </div>
-        <img class="hero-bg" src="./img/Rectangle 9.svg" alt="">
+
+        <img class="hero-bg" src="images/HeroBG.svg" alt="" />
 
         <div class="polygon-container">
-          <img class="polygon" src="./img/Polygon 1.jpg" alt="">
-          <img class="polygon2" src="./img/Polygon 2.svg" alt="">
-          <img class="polygon3" src="./img/Polygon 3.svg" alt="">
+          <img class="polygon" src="images/Polygon.svg" alt="" />
+          <img class="polygon2" src="images/Polygon2.svg" alt="" />
+          <img class="polygon3" src="images/Polygon3.svg" alt="" />
         </div>
       </header>
-<!-- END OF THE HERO SECTION -->
 
-<!-- Working on BRAND SECTION -->
+      <!-- End of Hero Section -->
 
-        <div class="brand-section">
-          <h2>Our Clients</h2>
-          <div class="brand-container">
-            <img src="./img/Microsoft.png" alt="">
-            <img src="./img/google.png" alt="">
-            <img src="./img/netflix.png" alt="">
-            <img src="./img/unity.png" alt="">
-            <img src="./img/amazone.pngs" alt="">
+      <div class="brands-section">
+        <h2>Our Clients</h2>
+
+        <div class="brands-container">
+          <div class="brands-line-1">
+            <img src="images/MicrosoftLogo.png" alt="" />
+            <img src="images/GoogleLogo.png" alt="" />
+            <img src="images/NetflixLogo.png" alt="" />
+          </div>
+
+          <div class="brands-line-2">
+            <img src="images/UnityLogo.png" alt="" />
+            <img src="images/AmazonLogo.png" alt="" />
           </div>
         </div>
-<!-- END OF BRANDS SECTION -->
-    
+      </div>
 
-        <!-- About Section -->
-        <section class="about-section">
-          <h2> About Us</h2>
-          <div class="section-content">
-            <div class="about-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada pharetra ut feugiat quisque odio nulla leo. Facilisis rhoncus gravida integer risus, ac vulputate a. Elementum fermentum feugiat nunc cras ac orci, amet sapien. Ut quis est, pellentesque in et ipsum. </p>
-              <p>Enim eget faucibus eget enim leo nisl lorem feugiat feugiat. Pellentesque duis id vel tellus in nisi, enim tellus id. Sit dignissim dictum sit integer tortor porttitor erat risus libero. Netus pulvinar vivamus nec, nec morbi.</p>
-            </div>
-            <img src="./img/person.png" alt="">
+      <!-- End of Brands Section -->
+
+      <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <div class="section-content">
+          <div class="about-description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              malesuada pharetra ut feugiat quisque odio nulla leo. Facilisis
+              rhoncus gravida integer risus, ac vulputate a. Elementum fermentum
+              feugiat nunc cras ac orci, amet sapien. Ut quis est, pellentesque
+              in et ipsum.
+            </p>
+
+            <p>
+              Enim eget faucibus eget enim leo nisl lorem feugiat feugiat.
+              Pellentesque duis id vel tellus in nisi, enim tellus id. Sit
+              dignissim dictum sit integer tortor porttitor erat risus libero.
+              Netus pulvinar vivamus nec, nec morbi.
+            </p>
           </div>
-       
-        </section>
-        <!-- END OF THE ABOUT SECTION -->
 
-        <section class="project-section">
-          <h2>Our Projects</h2>
-          <div class="project-gallery">
-            <img src="./img/n-1.png" alt="">
-            <img src="./img/n-2.png" alt="">
-            <img src="./img/n-3.png" alt="">
-            <img src="./img/n-4.png" alt="">
-            <img src="./img/n-5.png" alt="">
-            <img src="./img/n-6.png" alt="">
-          </div>
-          <a href="#" class="btn cyan">View All</a>
-        </section>
-     <!-- END OF THE PROJECT SECTION -->
+          <img src="images/About.png" alt="" />
+        </div>
+      </section>
 
-        <section class="testimonial-section">
-            <div class="wrapper">
-                <h2>Testimonials</h2>
-                <div class="testimonials-container">
-                  <div class="testimonails">
-                    <div class="testimonail">
-                      <div class="slide-container">
-                        <div class="content">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada pharetra ut feugiat quisque odio nulla leo. Facilisis rhoncus gravida integer risus, ac vulputate a. Elementum fermentum feugiat nunc cras ac orci, amet sapien. </p>
-                          <div class="name"><strong>Richards,</strong>  Amazon </div>
-                        </div>
-                        <img src="img/testimonial2.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="testimonails">
-                    <div class="testimonail">
-                      <div class="slide-container">
-                        <div class="content">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada pharetra ut feugiat quisque odio nulla leo. Facilisis rhoncus gravida integer risus, ac vulputate a. Elementum fermentum feugiat nunc cras ac orci, amet sapien. </p>
-                          <div class="name"><strong>Tara Green, </strong>  Ferrari,</div>
-                        </div>
-                        <img src="img/testimonials.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="testimonails">
-                    <div class="testimonail">
-                      <div class="slide-container">
-                        <div class="content">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut malesuada pharetra ut feugiat quisque odio nulla leo. Facilisis rhoncus gravida integer risus, ac vulputate a. Elementum fermentum feugiat nunc cras ac orci, amet sapien. </p>
-                          <div class="name"><strong>Richards,</strong>  Amazon </div>
-                        </div>
-                        <img src="img/woman.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <span class="slider-prev">
-                    <img src="./img/mdi_chevron_left.svg"/>
-                  </span>
-                  <span class="slider-prev">
-                    <img src="./img/mdi_chevron_right.svg"/>
-                  </span>
-                </div>
-            </div>
-        </section>
+      <!-- End of About Us Section -->
 
+      <section id="projects" class="project-section">
+        <h2>Our Projects</h2>
 
-<!-- END OF TESTIMONIAL -->
+        <div class="projects-gallery">
+          <img src="images/Project1.png" alt="" />
+          <img src="images/Project2.png" alt="" />
+          <img src="images/Project3.png" alt="" />
+          <img src="images/Project4.png" alt="" />
+          <img class="hide" src="images/Project5.png" alt="" />
+          <img class="hide" src="images/Project6.png" alt="" />
+        </div>
 
+        <a href="#" class="btn cyan">View All</a>
+      </section>
 
+      <!-- End of the Projects Section -->
     </div>
-    <script src="./main.js"></script>
+
+    <section id="testimonials" class="testimonials-section">
+      <div class="wrapper">
+        <h2>Testimonials</h2>
+
+        <div class="testimonials-container">
+          <div class="testimonials">
+            <div class="testimonial">
+              <div class="slide-container">
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    malesuada pharetra ut feugiat quisque odio nulla leo.
+                    Facilisis rhoncus gravida integer risus, ac vulputate a.
+                    Elementum fermentum feugiat nunc cras ac orci, amet sapien.
+                  </p>
+                  <div class="name">
+                    <strong>Darlene Richards,</strong> Amazon
+                  </div>
+                </div>
+
+                <img src="images/Testimonial1.png" alt="" />
+              </div>
+            </div>
+
+            <div class="testimonial">
+              <div class="slide-container">
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    malesuada pharetra ut feugiat quisque odio nulla leo.
+                    Facilisis rhoncus gravida integer risus, ac vulputate a.
+                    Elementum fermentum feugiat nunc cras ac orci, amet sapien.
+                  </p>
+                  <div class="name">
+                    <strong>Peter Williams,</strong> Louis Vuitton
+                  </div>
+                </div>
+
+                <img src="images/Testimonial2.png" alt="" />
+              </div>
+            </div>
+
+            <div class="testimonial">
+              <div class="slide-container">
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    malesuada pharetra ut feugiat quisque odio nulla leo.
+                    Facilisis rhoncus gravida integer risus, ac vulputate a.
+                    Elementum fermentum feugiat nunc cras ac orci, amet sapien.
+                  </p>
+                  <div class="name"><strong>Tara Green,</strong> Ferrari</div>
+                </div>
+
+                <img src="images/Testimonial3.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <span class="slider-prev"
+            ><img src="images/LeftArrow.svg" alt=""
+          /></span>
+
+          <span class="slider-next"
+            ><img src="images/RightArrow.svg" alt=""
+          /></span>
+
+          <div role="tablist" class="dots-container">
+            <div class="dots"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End of Testimonials Section -->
+
+    <!-- End of the Footer -->
+
+    <script src="glider.min.js"></script>
+
+    <script src="main.js"></script>
   </body>
 </html>

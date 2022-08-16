@@ -1,4 +1,4 @@
-/* colors */
+/* Colors */
 
 :root {
   --dark-color: #2b2d42;
@@ -8,6 +8,10 @@
 
   --red-hover-color: #be0732;
   --cyan-hover-color: #6af3e1;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -24,6 +28,7 @@ body {
   margin: 0 auto;
   padding: 0 100px;
 }
+
 p {
   line-height: 2;
   margin-bottom: 20px;
@@ -36,7 +41,8 @@ section {
 section p {
   color: var(--dark-color);
 }
-/* Header -Navigation */
+
+/* Header - Navigation */
 
 .desktop-nav {
   display: flex;
@@ -62,10 +68,6 @@ section p {
 .desktop-nav .menu-items li {
   margin: 0 20px;
 }
-/* Last Child */
-/* .desktop-nav .menu-items li:last-child {
-  margin: 0;
-} */
 
 .desktop-nav .menu-items li:nth-last-of-type(1) {
   margin-right: 0;
@@ -84,52 +86,62 @@ section p {
   position: absolute;
   height: 3px;
   width: 100%;
+  background: var(--red-color);
   left: 0;
   bottom: -14px;
-  background-color: var(--red-color);
 }
 
 .desktop-nav .menu-items li a.btn {
   color: var(--light-color);
-  padding: 14px 30px;
-  border-radius: 24px;
 }
 
 a.btn {
   background: var(--red-color);
   color: var(--light-color);
-  text-decoration: none;
   border-radius: 24px;
   padding: 14px 30px;
+  text-decoration: none;
   font-weight: bold;
   transition: background-color 400ms;
 }
+
+section a.btn {
+  display: inline-block;
+}
+
 a.btn.cyan {
   background: var(--cyan-color);
   color: var(--dark-color);
-  font-weight: bold;
 }
+
 a.btn:hover {
-  background-color: var(--red-hover-color);
+  background: var(--red-hover-color);
 }
+
 a.btn.cyan:hover {
-  background-color: var(--cyan-hover-color);
+  background: var(--cyan-hover-color);
 }
-/* Hero -Container */
+
+/* Hero Section */
 
 .hero-container {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* position: relative; */
 }
+
 .hero-container .left {
   flex: 1;
 }
+
+.hero-container .left p {
+  font-size: 24px;
+}
+
 .hero-container .left h1 {
-  font-family: "Montserrat", sans-serif;
   font-size: 36px;
+  font-family: "Montserrat", sans-serif;
   margin: 8px 0 28px 0;
 }
 
@@ -140,14 +152,12 @@ a.btn.cyan:hover {
 .hero-container .left .btn {
   margin-right: 20px;
 }
-.hero-container .right p {
+
+.hero-container .right {
   padding-right: 30px;
 }
-.hero-container .left p {
-  font-size: 24px;
-}
 
-/* Hero Polygon */
+/* Hero BG and Polygons */
 
 .hero-bg {
   position: absolute;
@@ -163,6 +173,7 @@ a.btn.cyan:hover {
   top: 100px;
   left: 240px;
 }
+
 .hero-container .polygon2 {
   position: absolute;
   z-index: -1;
@@ -177,7 +188,8 @@ a.btn.cyan:hover {
   left: 540px;
 }
 
-/* Header Animation */
+/* Animation */
+
 .desktop-nav {
   animation: fadeDown 1000ms forwards;
   opacity: 0;
@@ -275,27 +287,39 @@ a.btn.cyan:hover {
   }
 }
 
-/* Brand-Section */
+/* Brands Section */
 
-.brand-section {
-  background: var(--light-color);
+.brands-section {
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
   border-radius: 24px;
+  background: var(--light-color);
   padding: 32px 50px;
   margin-top: 100px;
 }
 
-.brand-section .brand-container img {
+.brands-section .brands-container img {
   height: 32px;
 }
 
-.brand-section .brand-container {
+.brands-section .brands-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.brand-section h2,
+.brands-section .brands-line-1 {
+  display: flex;
+  justify-content: space-around;
+  flex: 2;
+}
+
+.brands-section .brands-line-2 {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.brands-section h2,
 section h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 32px;
@@ -305,34 +329,40 @@ section h2 {
   position: relative;
 }
 
-.brand-section h2::after,
+.brands-section h2::after,
 section h2::after {
-  position: absolute;
-  width: 43px;
   content: "";
+  width: 43px;
   height: 3px;
-  top: 40px;
+  position: absolute;
   background: var(--red-color);
+  top: 40px;
   transform: translateX(-43px);
 }
 
 /* About Us */
+
 .about-section .section-content {
   display: flex;
+  align-items: center;
 }
 
 .about-section .section-content img {
   margin-left: 100px;
 }
-/* Our Projects */
-.project-section .project-gallery {
+
+/* Projects Section */
+
+.projects-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 40px 18px;
   margin-bottom: 42px;
 }
 
-.project-section .project-gallery img {
+.projects-gallery img {
   width: 100%;
   object-fit: cover;
 }
+
+/* Testimonials Section */
