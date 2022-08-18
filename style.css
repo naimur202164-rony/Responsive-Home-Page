@@ -452,3 +452,17 @@ footer a:hover {
   justify-content: space-between;
   padding: 100px 0px 32px 0;
 }
+
+.footer-container .logo {
+  align-self: center;
+}
+
+.footer-container ul {
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-container ul li {
+  margin: 16px 0;
+}
