@@ -480,6 +480,14 @@ footer a:hover {
   margin-left: 0;
 }
 
+.footer-container .footer-social a img {
+  transition: 500ms;
+}
+
 .footer-container .footer-social a img:hover {
   transform: scale(1.2);
+}
+
+.copyright {
+  text-align: center;
 }
